@@ -1,0 +1,201 @@
+@import"https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap";
+            
+             :root{
+                /*Aqui dentro eu posso utilizar variaveis dentro do css*/
+                --color-green:#50fa7b;
+                --color-rocket:#7159c1;
+             }
+
+            * {
+                /*Seletor que pega tudo que tem no html,zera ou sejá zerando tudo*/
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            body {
+                background: #282a36;
+                font-family: 'Source Sans Pro', sans-serif;
+                color: white;/*Mudar a cor das palavras que se encontram no corpo do nosso documento HTML*/
+
+            }
+            header {
+                padding: 30px;
+                border-bottom: 1px solid #333;
+                background: rgba(0, 0, 0, 0.1);
+            }
+            .links {
+                text-align: center;
+                /*Alinhamento de textos*/
+            }
+            .links a {/* Para mencionar classes utilizo . e o nome da classe*/
+                color: white;
+                /*Coloração de textos*/
+                font-size: 18px;
+                /*Tamanho da Fonte*/
+                line-height: 28px;
+                /*Altura da linha do texto*/
+                margin: 0 16px;
+                /*0 em cima e baixo,16px nas laterais*/
+                text-decoration: none;
+                /*Tirar o undelirne do link Sobre Aulas*/
+            }
+    .links a:hover {
+                color:  var(--color-green);
+                transition: color 200ms;
+            }
+            #wrapper{/*Para pegar um seletor id utilizo # na frente em seguida o nome do id*/
+            text-align: center;
+            padding: 32px;    
+
+            }
+
+            #wrapper img{
+                border-radius: 50%;/*Arredondar as bordas da imagem*/
+                border:5px solid var(--color-green);
+                /*Aqui no lugar de utilizar o nome da cor,eu coloquei a variavel*/
+                margin-bottom: 32px;
+                height: 300px;/*Altura*/
+            }
+
+            #wrapper h1{
+                font-size: 42px;/*Tamanho da Fonte*/
+                line-height: 52px;/*Altura da linha do texto*/
+                font-weight:bold ;/*Peso da fonte*/
+            }
+            #wrapper h2{
+                font-size: 24px ;/*Tamanho da Fonte*/
+                line-height: 34px;/*Altura da linha do texto*/
+                font-weight: normal;/*font-weight serve para especificar o peso ou a intensidade da fonte*/ 
+                margin-top: 8px;/*espaçamento superior*/
+                opacity: 0.8;/*Deixar mais claro*/
+            }
+            #wrapper p{
+                max-width: 500px;/*Quero uma largura maxima e quando chegar a 500px ele vai parar,ele vai quebrar a linha e vai para baixo*/
+                margin: 32px auto;/*Quero que as laterais sejam automaticas*/
+                font-size: 24px;/*Tamanho da Fonte*/
+                line-height: 34px;/*Altura da linha do texto*/
+            }
+            #wrapper p a{
+                color:  var(--color-green);
+            }
+
+            #links-footer a{
+               /* text-decoration: underline;/*Decoração de Texto,vai ter uma linha abaixo de linkedin,Twitter,Github*/
+                
+               border-bottom: 1px solid var(--color-green);/*Para colocar a cor verde embaixo de linkedin,Twitter,Github*/
+            }
+
+            /*=== CARDS === */
+
+            .cards{
+                max-width: 800px;/*Limte maximo de largura*/
+                margin: 0 auto;/*Alinhar ao meio*/
+                display: grid;/*Estou transformando ele como uma tabela onde tem os eixos x e y*/
+                grid-template-columns: 1fr 1fr 1fr;/*Aqui vai ser o número de colunas que eu quero,que no caso quero 3 colunas,ele já vai colocar coladinho atrás do outro quando chegar no final ele joga para linha de baixo*/
+                gap: 20px;/*O gap ele dá um espaço entre os elementos do grid*/
+            }
+            .card{
+                background: var(--color-rocket);
+                display: grid;
+                cursor: pointer;/*Quando eu passar o mouse em cima do card vai virar uma mão*/
+                
+            }
+.card__image-container img{
+    width: 100%;
+}
+
+            .card__content,
+            .card__info{
+                padding: 24px;
+            }
+
+        .card__info{
+            display: grid;/*O grid trabalha em ambos os eixos, a partir que eu criei um eixo,posso dizer quantas colunas eu quero*/
+            grid-template-columns: 1fr 1fr;/*Estou dizendo que ele vai deixar as minhas colunas com 2 colunas.Esse fr significa que eu quero que ele sejá flexível no tamanho e as 2 tenha os mesmos tamanhos*/
+            align-items: center;/*align-items só funciona com display grid e display flex*/
+        }
+        .card__price{
+            background-color: var(--color-rocket);
+            filter: brightness(90%);/*Diminuir o Brilho*/
+            padding: 5px 20px;/*Espaçamento 5 px em cima e embaixo e 20px nas laterais*/
+            border-radius:20px ;/*Para arredondar os cantos*/
+            text-align: center;/*Centralizar o texto*/
+        }
+
+        /* === MODAL ===*/
+        .modal-overlay{/*Fundo Transparente*/
+           background-color: rgba(0, 0, 0, 0.7);/*Vou colocar um fundo transparente*/ 
+           width: 100%;/*Esticar o fundo transparente*/
+           height:100%;/*Esticar o fundo transparente*/
+           position: fixed;/* Vai ficar posicionado na minha tela*/
+           top: 0;
+           opacity: 0;
+           visibility: hidden;/*A visibilidade do x mesmo com opacidade 0 ainda está lá pois quando eu passo o mouse no local do x ele vira uma mão e essa propriedade vai tirar isso*/
+        }
+
+        .modal{/*Pop-UP*/
+            background-color: white;
+            width: 90%;/*Esticar o fundo transparente*/
+            height: 90%;/*Esticar o fundo transparente*/
+            margin: 5vh auto;/*Alinhar ele,vou colocar 5 em cima e 5 embaixo da visão da altura que sempre e 100 e automatico nas laterais*//*vh significa viewport que seria a visão do meu dispositivo e mais fácil de lembrar pelo nome visão da altura*/
+            position: relative;
+            
+
+        }
+        .modal  .close-modal{
+            color:black;/*Mudar a cor do x*/
+            position: absolute;/*posicionamento absoluto na tela toda*//*Aqui eu mudei a posição do x de lado*/
+            /*right: 0;*//*quando eu fiz isso aqui ele fico absoluto fora da caixa então no modal eu coloco uma tag position relative*/
+            right: 8px;/*Quero que o x de um pequeno espaço da lateral*/
+            top: 8px;/*Quero que o x de um pequeno espaço de cima*/
+            cursor: pointer;/*Quando eu passar o mouse em cima do x vai virar uma mão*/
+        }
+
+         /* === MODAL. ACTIVE ===*/
+
+    .modal-overlay.active{/*vou pegar o modal-overlay quando eu tiver a classe active ativa vai apareçer o pop-up(modal) quando tirar some o pop-up*/
+             opacity: 1;
+            visibility: visible;
+        }
+
+    iframe{
+        width:100%;/*Largura*/
+        height:90%;/*Altura,não e 100% porque tem o botão de X*/
+        position: absolute;/*O absolute preencheu tudo porque ele tem como função criar um novo contexto ou seja ele sempre vai usar como referência a tela toda*/
+        top: 5%;
+      }          
+     
+      /*=== featured ===*/
+      .featured-wrapper.card__image-container{
+          position: relative;
+      }
+      .featured{
+        position: absolute;
+        background: #f7d05f;
+        color: #111;
+        padding: 2px 8px;
+        position: absolute;
+        right:5px;
+        border-radius: 16px;
+        top: -10px;
+
+      }
+
+      /* === VIDEO PAGE ===*/
+      
+      .video{
+          margin: 0 auto;
+          max-width: 700px;
+      }
+
+      .card__video-container {
+          position: relative;
+          padding-top: 40%;
+         
+      }
+      .card__video-container iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }

@@ -1,0 +1,68 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Portfolio - Bruno Victor</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+{% endblock %}
+
+{% block content %}
+
+<!--</header>1111111111-->
+<div id="wrapper">
+    <!--wrapper e o nome do ID-->
+    <h1>Aulas</h1>
+</div>
+
+<section class="cards">
+    <!--Section porque vai ser uma seção,e uma tag para ser semantica-->
+
+    {% for item in items %}
+        <!--Estrutura de repetição-->
+        <div class="card" id="{{item.id}}">
+            <div class="card__image-container {{'featured-wrapper' if item.featured }}">
+                <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+            {% if item.featured %}
+            <div class="featured">Featured</div>
+            {% endif%}
+            </div>
+            <div class="card__content">
+                <!--Conteudo do Card-->
+                <p>{{item.title}}</p>
+            </div>
+            <div class="card__info">
+                <!--Informativo-->
+                <p>{{item.duration}}</p>
+                <p class="card__price">{{item.price}}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+
+</section>
+
+<!--<div class="modal-overlay ">-->
+    <!--active-->
+    <!--Aqui tem 2 classes-->
+    <!--Fundo Transparente-->
+    <!--<div class="modal">-->
+        <!--Pop-up-->
+        <!--<a class="close-modal">
+            <i class="material-icons">close</i>-->
+            <!--O x de fechar o pop-up-->
+
+       <!-- </a>
+        <div class="modal-content">-->
+            <!-- video aqui -->
+            <!--<iframe src="" frameborder="0"></iframe>-->
+            <!--Uma tag HTML para trazer conteúdo externo de vídeo,podemos até trazer páginas e outras coisas também se chama iframe ele cria como si fosse uma caixa dentro do seu html,trazendo um html de fora,geralmente quando vamos compartilhar um video do youtube falamos que e EMBED.EMBED significa justamente colocar na nossa página em algum lugar-->
+            <!-- No lugar de usar o src aqui https://www.youtube.com/embed/q6ppzNXcA0U eu vou usar no javascript-->
+        <!--</div>
+    </div>
+</div>-->
+<script src="/scripts.js"></script>
+<!--Aqui eu estou injetando o javascript na minha página js-->
+
+{% endblock%}

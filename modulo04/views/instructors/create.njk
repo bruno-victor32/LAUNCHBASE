@@ -1,0 +1,66 @@
+{% extends "layout.njk" %}
+
+
+{% block  content %}
+<form class="card" method="POST" action="/instructors"><!--O metodo post "method" e melhor para criação de dados,o "action" que e o segundo atributo e para onde iremos enviar,si eu não coloco o action ele fica na mesma pagina e como ele envia o formulario para a mesma pagina-->
+    <section 
+    class="avatar" 
+    style=" background: url(https://source.unsplash.com/collection/1647783/500x500) no-repeat center center / cover">    </section>
+     <section class="details">
+
+        <h3>Novo Instrutor</h3> 
+
+        <div class="item">
+            <div>Avatar URL</div>
+            <div>
+                <input type="url"
+                name="avatar_url"
+                placeholder="http://"
+                >
+                <!-- Quando eu coloco o name,permiti que eu envie no meu post,eu consigo pegar os dados do meu post quando eu coloco o name-->
+
+            </div>
+        </div>
+                <div class="item">
+            <div>Instrutor</div>
+            <div>
+                <input type="text"
+                name="name"
+                placeholder="Nome do Instrutor">
+                <!--Quando eu coloco o name,permiti que eu envie no meu post,eu consigo pegar os dados do meu post quando eu coloco o name-->
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Data de nascimento</div>
+            <div>
+                <input type="date" 
+                name="birth">
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Sexo</div>
+            <div>
+              <span><input type="radio" name="gender" value="M" checked>Masculino</span> 
+              <span><input type="radio" name="gender" value="F">Feminino</span>  
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Área de Atuação</div>
+            <div>
+                <input type="text"
+                 name="services"
+                 placeholder="Separe os serviços prestados por vírgula">
+            </div>
+        </div>
+
+        <button type="submit">Salvar</button><!--Quando eu coloco type="submit" significa que quando eu clicar nele,ele vai perceber que está dentro do form e vai executar a ação de enviar para a pagina instructors no formato de POST-->
+     </section>   
+
+</form>
+
+
+{% endblock content %}
+

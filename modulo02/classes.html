@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">-->
+        <!--Coloquei essa linha direto no css,utilizando o import-->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Serve para configurar fontes de ícone para uso em qualquer página da web-->
+        <!--Site que retirei o link https://google.github.io/material-design-icons/-->
+        <title>Bruno Victor</title>
+
+    </head>
+    <body>
+        <header>
+            <!--Parte Inicial da Pagina "logo,menu,Cabeçalho"-->
+            <div class="links">
+                <a href="index.html">Sobre</a>
+                <a href="classes.html">Aulas</a>
+            </div>
+
+        </header>
+        <div id="wrapper">
+            <!--wrapper e o nome do ID-->
+            <h1>Aulas</h1>
+        </div>
+
+        <section class="cards">
+            <!--Section porque vai ser uma seção,e uma tag para ser semantica-->
+            <div class="card" id="7qqtLkl268c">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/7qqtLkl268c/maxresdefault.jpg" alt="Video Aula">
+                </div>
+                <div class="card__content"><!--Conteudo do Card-->
+                    <p>Engenharia e fácil? | Bruno Victor</p>
+                </div>
+                <div class="card__info"><!--Informativo-->
+                    <p>07 min</p>
+                    <p class="card__price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id="TneQ8eIY454">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/TneQ8eIY454/maxresdefault.jpg" alt="Thaissa Candela - What">
+                </div>
+                <div class="card__content">
+                    <p>O que vai rolar por aqui? | Bruno Victor</p>
+                </div>
+                <div class="card__info">
+                    <p>03 min</p>
+                    <p class="card__price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id="oUPaJxk6TZ0">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/oUPaJxk6TZ0/maxresdefault.jpg" alt="Akita">
+                </div>
+                <div class="card__content">
+                    <p>Guia definitivo de aprendendo a aprender | Fabio Akita</p>
+                </div>
+                <div class="card__info">
+                    <p>1 hora 04 min</p>
+                    <p class="card__price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id="Ud-Z3vrJKTk">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/Ud-Z3vrJKTk/maxresdefault.jpg" alt="Gabriel Pato">
+                </div>
+                <div class="card__content">
+                    <p>Falha grave da uol permite invasão por um simples envio de E-mail | Gabriel Pato</p>
+                </div>
+                <div class="card__info">
+                    <p>19 min</p>
+                    <p class="card__price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id="-u4afrfBsTE">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/-u4afrfBsTE/maxresdefault.jpg" alt="Mairo Vergara">
+                </div>
+                <div class="card__content">
+                    <p>Keep At Bay O que significa esta expressão? | Mairo Vergara</p>
+                </div>
+                <div class="card__info">
+                    <p>07 min</p>
+                    <p class="card__price">Free</p>
+                </div>
+            </div>
+
+            <div class="card" id="q6ppzNXcA0U">
+                <div class="card__image-container">
+                    <img src="https://img.youtube.com/vi/q6ppzNXcA0U/maxresdefault.jpg" alt="Edukof">
+                </div>
+                <div class="card__content">
+                    <p>Comprei um mini computador | Edukof</p>
+                </div>
+                <div class="card__info">
+                    <p>16 min</p>
+                    <p class="card__price">Free</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="modal-overlay "><!--active--><!--Aqui tem 2 classes-->
+            <!--Fundo Transparente-->
+            <div class="modal">
+                <!--Pop-up-->
+                <a  class="close-modal">
+                    <i class="material-icons">close</i>
+                    <!--O x de fechar o pop-up-->
+
+                </a>
+                <div class="modal-content">
+                    <!-- video aqui -->
+                    <iframe src="" frameborder="0"></iframe><!--Uma tag HTML para trazer conteúdo externo de vídeo,podemos até trazer páginas e outras coisas também se chama iframe ele cria como si fosse uma caixa dentro do seu html,trazendo um html de fora,geralmente quando vamos compartilhar um video do youtube falamos que e EMBED.EMBED significa justamente colocar na nossa página em algum lugar--><!-- No lugar de usar o src aqui https://www.youtube.com/embed/q6ppzNXcA0U eu vou usar no javascript-->
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js">
+
+        </script><!--Aqui eu estou injetando o javascript na minha página js-->
+    </body>
+</html>
