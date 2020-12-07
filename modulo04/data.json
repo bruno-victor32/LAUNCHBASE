@@ -1,3 +1,13 @@
 {
-  "instructors": []
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "name": "Bruno Victor",
+      "birth": 1601424000000,
+      "gender": "M",
+      "services": "musculação,crossfit",
+      "created_at": 1604147484710
+    }
+  ]
 }
