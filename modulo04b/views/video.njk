@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>{{item.title}}</title>
+
+{% endblock %}
+
+{% block content %}
+
+<!--</header>1111111111-->
+<div id="wrapper" class="video">
+    <!--wrapper e o nome do ID-->
+    <h1>{{item.title}}</h1>
+</div>
+
+<section class=" video">
+    <!--Section porque vai ser uma seção,e uma tag para ser semantica-->
+
+
+        <div class="card" id="{{item.id}}">
+            <div class="card__video-container ">
+                <iframe src="https://www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
+
+            </div>
+            <div class="card__content">
+                <!--Conteudo do Card-->
+                <p>{{item.title}}</p>
+            </div>
+            <div class="card__info">
+                <!--Informativo-->
+                <p>{{item.duration}}</p>
+                <p class="card__price">{{item.price}}</p>
+            </div>
+        </div>
+
+</section>
+
+{% endblock%}

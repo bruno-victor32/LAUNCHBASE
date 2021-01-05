@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        {% block head%}
+            <title>Bruno Victor</title>
+        {% endblock %}
+            <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">-->
+            <!--Coloquei essa linha direto no css,utilizando o import-->
+            <link rel="stylesheet" href="/styles.css">
+
+
+        </head>
+        <body>
+            <header>
+                <!--Parte Inicial da Pagina "logo,menu,Cabeçalho"-->
+                <div class="links">
+                    <a href="/">Sobre</a>
+                    <a href="/portfolio">Aulas</a>
+                </div>
+
+            </header>
+
+            {% block content %}<!--Poderia ter usado outro nome que eu quisesse no content -->
+            {% endblock %}<!--Fechando o bloco-->
+
+        </body>
+    </html>

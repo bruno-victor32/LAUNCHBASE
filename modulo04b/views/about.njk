@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}<!-- Quando eu chegar nessa página,ele vai ler essa linha e vai para a página layout mas eu não vou de mãos vazias-->
+
+        {% block head %}
+            <title>Sobre - {{about.name}}</title>
+        {% endblock %}
+
+{% block content %}
+
+
+ <div id="wrapper">
+            <!--wrapper e o nome do ID-->
+            <img src="{{about.avatar_url}}" alt="Imagem de {{ about.name}}">
+            <h1>{{ about.name }}</h1>
+            <h2>{{ about.role}}</h2>
+            <p>{{ about.description}}</p>
+            <!--target="_blank" serve para quando clicar no link ser direcionado a outra pagina e não abrir o link na mesma pagina-->
+        </div>
+        <div id="links-footer" class="links">
+            {% for link in about.links %}
+            <a href="{{ link.url}}" target="_blank">{{link.name}}</a>
+        {% endfor %}
+        </div>
+
+{% endblock %}
