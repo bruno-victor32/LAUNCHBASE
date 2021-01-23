@@ -1,0 +1,46 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+      "name": "Bruno Victor",
+      "email": "bruno.victo013@gmail.com",
+      "birth": 1611532800000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "80",
+      "height": "1425"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Gracineide",
+      "email": "gracindei@yahoo.com.br",
+      "birth": 1610841600000,
+      "gender": "F",
+      "blood": "AB-",
+      "weight": "70",
+      "height": "5478"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+      "name": "Fabiana",
+      "birth": 676252800000,
+      "gender": "F",
+      "services": "Dança, Cross-fit",
+      "created_at": 1611277271679
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+      "name": "Bruno Victor",
+      "birth": 823651200000,
+      "gender": "M",
+      "services": "Futebol, Natação, Futvolei",
+      "created_at": 1611277337784
+    }
+  ]
+}

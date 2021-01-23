@@ -1,0 +1,153 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "name": "Bruno",
+      "birth": 1609804800000,
+      "subjects": "hh",
+      "classe": "presencial",
+      "select": "ensinoMedioCompleto",
+      "created_at": 1610406250154
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://github.com/martins-rafael/gym-manager",
+      "name": "fffggggh",
+      "birth": 1609977600000,
+      "classe": "p",
+      "select": [
+        "ensinoMedioCompleto",
+        "hhh"
+      ],
+      "created_at": 1610562742028
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://google.com",
+      "name": "hhyte",
+      "birth": 1610064000000,
+      "classe": "d",
+      "select": [
+        "ensinoSuperiorCompleto",
+        "ttt"
+      ],
+      "created_at": 1610563859714
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://google.com",
+      "name": "fddwq",
+      "birth": 1609891200000,
+      "classe": "Presencial",
+      "select": [
+        "medio",
+        "ttt"
+      ],
+      "created_at": 1610819242636
+    },
+    {
+      "id": 5,
+      "birth": null,
+      "created_at": 1610819273568
+    },
+    {
+      "id": 6,
+      "birth": null,
+      "created_at": 1610819285326
+    },
+    {
+      "id": 7,
+      "avatar_url": "https://google.com",
+      "name": "fddwq",
+      "birth": 1609891200000,
+      "classe": "Presencial",
+      "select": [
+        "medio",
+        "ttt"
+      ],
+      "created_at": 1610819294094
+    },
+    {
+      "id": 8,
+      "birth": null,
+      "created_at": 1610819313545
+    },
+    {
+      "id": 9,
+      "avatar_url": "https://google.com",
+      "name": "ffd",
+      "birth": 1609891200000,
+      "classe": "EAD",
+      "select": [
+        "mestrado",
+        "medio,tttff"
+      ],
+      "created_at": 1610822942951
+    },
+    {
+      "id": 10,
+      "avatar_url": "https://anamariabraga.com.br",
+      "name": "Brian da quebrada",
+      "birth": 1610496000000,
+      "classe": "Presencial",
+      "select": [
+        "superior",
+        "Portu,Ingl"
+      ],
+      "created_at": 1610823030595
+    },
+    {
+      "id": 11,
+      "avatar_url": "https://google.com",
+      "name": "Bruno Victor",
+      "birth": 1610582400000,
+      "classe": "Presencial",
+      "select": [
+        "ensinoSuperiorCompleto",
+        "Portu,Ingl"
+      ],
+      "created_at": 1610823341094
+    },
+    {
+      "id": 12,
+      "avatar_url": "https://github.com/martins-rafael/gym-manager",
+      "name": "d",
+      "birth": 1609459200000,
+      "classe": "Presencial",
+      "school": "ensinoMedioCompleto",
+      "select": "hhh",
+      "created_at": 1610823587742
+    },
+    {
+      "id": 13,
+      "avatar_url": "https://github.com/martins-rafael/gym-manager",
+      "name": "Bruno",
+      "birth": 1610582400000,
+      "classe": "Presencial",
+      "school": "ensinoSuperiorCompleto",
+      "select": "medio,tttff",
+      "created_at": 1610823660480
+    },
+    {
+      "id": 14,
+      "avatar_url": "https://google.com",
+      "name": "Bruno Victor",
+      "birth": 1609977600000,
+      "classe": "Presencial",
+      "school": "superior",
+      "select": "Portu,Ingl",
+      "created_at": 1610830044052
+    },
+    {
+      "id": 15,
+      "avatar_url": "https://google.com",
+      "name": "Bruno Victor",
+      "birth": 1610928000000,
+      "classe": "EAD",
+      "school": "mestrado",
+      "select": "Portu,Ingl",
+      "created_at": 1610830085987
+    }
+  ]
+}
