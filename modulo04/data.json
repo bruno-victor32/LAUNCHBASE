@@ -1,17 +1,6 @@
 {
   "members": [
     {
-      "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-      "name": "Bruno Victor",
-      "email": "bruno.victo013@gmail.com",
-      "birth": 1611532800000,
-      "gender": "M",
-      "blood": "A+",
-      "weight": "80",
-      "height": "1425"
-    },
-    {
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
       "name": "Gracineide",
@@ -21,6 +10,17 @@
       "blood": "B+",
       "weight": "60",
       "height": "1234"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://github.com/martins-rafael/gym-manager",
+      "name": "Gracineide",
+      "email": "gracindei@yahoo.com.br",
+      "birth": 1620000000000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "100",
+      "height": "89"
     }
   ],
   "instructors": [
@@ -41,6 +41,15 @@
       "gender": "M",
       "services": "musculação,crossfit,natação",
       "created_at": 1611437287563
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://github.com/martins-rafael/gym-manager",
+      "name": "Bruno",
+      "birth": 1617926400000,
+      "gender": "M",
+      "services": "Dança, Cross-fit",
+      "created_at": 1617642147245
     }
   ]
 }
